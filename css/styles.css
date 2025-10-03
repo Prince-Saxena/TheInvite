@@ -1,0 +1,199 @@
+body {
+				font-family: "Hind Siliguri", sans-serif;
+				background-color: transparent;
+				scroll-behavior: smooth;
+			}
+			.tangerine {
+  font-family: "Tangerine", cursive;
+}
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.mandala-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpath fill='%23b91c1c' fill-opacity='0.1' d='M100,0 C155.228,0 200,44.772 200,100 C200,155.228 155.228,200 100,200 C44.772,200 0,155.228 0,100 C0,44.772 44.772,0 100,0 Z M100,20 C56.194,20 20,56.194 20,100 C20,143.806 56.194,180 100,180 C143.806,180 180,143.806 180,100 C180,56.194 143.806,20 100,20 Z M100,40 C66.863,40 40,66.863 40,100 C40,133.137 66.863,160 100,160 C133.137,160 160,133.137 160,100 C160,66.863 133.137,40 100,40 Z M100,60 C77.909,60 60,77.909 60,100 C60,122.091 77.909,140 100,140 C122.091,140 140,122.091 140,100 C140,77.909 122.091,60 100,60 Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px;
+}
+.paisley-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23b91c1c' fill-opacity='0.1' d='M70,30 Q85,40 80,60 Q75,80 60,85 Q40,90 30,70 Q20,50 30,30 Q40,10 60,15 Q75,20 70,30 Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 100px;
+}
+.floral-divider {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath fill='%23b91c1c' fill-opacity='0.3' d='M20,5 Q23,0 28,3 Q32,5 32,10 Q32,15 28,18 Q32,20 30,25 Q28,30 23,30 Q20,32 18,30 Q13,30 10,25 Q8,20 12,18 Q8,15 8,10 Q8,5 12,3 Q17,0 20,5 Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 40px;
+  height: 40px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-out forwards;
+}
+.animate-bounce-slow {
+  animation: bounceSlow 2s infinite;
+}
+
+
+.gold-border-modern {
+    border: 1.5px solid rgba(245, 158, 11, 0.4);
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+/* Photo container with shine effect */
+.photo-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s ease;
+}
+
+.group:hover .shine {
+    left: 100%;
+}
+
+/* Modern button with hover effect */
+.modern-btn {
+    transition: all 0.4s ease;
+}
+
+.modern-btn:hover {
+    color: #7f1d1d;
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.4);
+}
+
+/* Animations */
+@keyframes slide-in {
+    from { 
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes grow-line {
+    from { 
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes fade-in-up {
+    from { 
+        transform: translateY(50px); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 1s ease-out forwards;
+}
+
+.animate-slide-in-delayed {
+    animation: slide-in 1s ease-out 0.3s forwards;
+}
+
+.animate-grow-line {
+    animation: grow-line 1s ease-out 0.5s forwards;
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+}
+
+.animate-fade-in-up.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animate-fade-in-up.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-fade-in-up.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.animate-fade-in-up.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animate-fade-in-up.delay-500 {
+    animation-delay: 0.5s;
+}
+
+/* Hover effects for images */
+.group:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .grid {
+        gap: 1rem;
+    }
+    
+    .gold-border-modern {
+        border-width: 1px;
+    }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
