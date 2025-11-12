@@ -6,6 +6,11 @@ body {
 			.tangerine {
   font-family: "Tangerine", cursive;
 }
+
+:target {
+  scroll-margin-top: 96px; /* adjust to header height */
+}
+
 .playfair {
   font-family: "Playfair Display", serif;
 }
